@@ -30,7 +30,7 @@ public class CommandTick extends CommandBase {
 	public void processCommand(ICommandSender icommandsender, String[] astring) {
 		// TODO Auto-generated method stub
 		if(astring.length > 0){
-			ObfuscationReflectionHelper.setPrivateValue(Timer.class, ((Timer)ObfuscationReflectionHelper.getPrivateValue(Minecraft.class, Minecraft.getMinecraft(), "timer")), Float.parseFloat(func_96332_d(icommandsender, astring[0])), "ticksPerSecond");
+			ObfuscationReflectionHelper.setPrivateValue(Timer.class, ((Timer)ObfuscationReflectionHelper.getPrivateValue(Minecraft.class, Minecraft.getMinecraft(), 15)), Float.parseFloat(func_96332_d(icommandsender, astring[0])), 0);
 		}
 		
 	}
